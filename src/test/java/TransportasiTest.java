@@ -49,7 +49,7 @@ public class TransportasiTest {
     @Test
     public void testInheritance() {
         Kendaraan k = new Car(0, 0, "B1234AB", 0.0);
-        assertEquals("this method overriden by Child", k.methodParent());
+        assertEquals("this method overriden by Child", k.methodChild());
     }
 
     @Test

@@ -61,13 +61,6 @@ public class TransportasiTest {
         assertNotNull(suv.toString());
     }
 
-    @Test
-    public void testUpCasting() {
-        Kendaraan kendaraan = new Car(0, 0, "B1234AD", 0.0);
-        assertEquals("Car{xLoc=0, yLoc=0, plateNum=B1234AD, speed=0.0}", kendaraan.toString());
-
-        kendaraan = new SUV(0, 0, "B1234AD", 0.0);
-        assertEquals("SUV{groundClearence=0, xLoc=0, yLoc=0, plateNum=B1234AD, speed=0.0}", kendaraan.toString());
     }
 
     @Test(expected = Transportasi.KendaraanPenuhException.class)

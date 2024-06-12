@@ -85,7 +85,7 @@ public class TransportasiTest {
         int kecepatan = 120;
 
         if (kecepatan > 100) {
-            throw new Transportasi.KecepatanTerlaluTinggiException("Kecepatan terlalu tinggi");
+            throw new Transportasi.KecepatanTerlaluTinggiException("Kecepatan sangat tinggi");
         }
     }
 

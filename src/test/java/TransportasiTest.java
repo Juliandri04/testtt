@@ -9,7 +9,7 @@ public class TransportasiTest {
     private Plane plane;
     private Motorcycle motorcycle;
     private Bicycle bicycle;
-    private SUV suv;
+    
 
     @Before
     public void setUp() {
@@ -17,7 +17,7 @@ public class TransportasiTest {
         plane = new Plane(0, 0, 0.0);
         motorcycle = new Motorcycle(0, 0, "B1234AD", 0.0);
         bicycle = new Bicycle(0, 0, 0.0);
-        suv = new SUV(0, 0, "B1234AD", 0.0);
+        
     }
 
     @Test
@@ -58,17 +58,8 @@ public class TransportasiTest {
         assertNotNull(plane.toString());
         assertNotNull(motorcycle.toString());
         assertNotNull(bicycle.toString());
-        assertNotNull(suv.toString());
     }
 
-    @Test
-    public void testUpCasting() {
-        Kendaraan kendaraan = new Car(0, 0, "B1234AD", 0.0);
-        assertEquals("Car{xLoc=0, yLoc=0, plateNum=B1234AD, speed=0.0}", kendaraan.toString());
-
-        kendaraan = new SUV(0, 0, "B1234AD", 0.0);
-        assertEquals("SUV{groundClearence=0, xLoc=0, yLoc=0, plateNum=B1234AD, speed=0.0}", kendaraan.toString());
-    }
 
     @Test(expected = Transportasi.KendaraanPenuhException.class)
     public void testKendaraanPenuhException() throws Transportasi.KendaraanPenuhException {

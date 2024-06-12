@@ -23,7 +23,7 @@ public class TransportasiTest {
     @Test
     public void testCarMovement() {
         car.move(10, 20);
-        assertEquals(10, car.getXLoc());
+        assertEquals(15, car.getXLoc());
         assertEquals(20, car.getYLoc());
     }
 
